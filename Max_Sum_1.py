@@ -26,6 +26,6 @@ def MaxSum(m,n,a_list):
             sum = b[i]
     print(sum,b,c,a_list)
 if __name__ == '__main__':
-    # a_list = [0,10,-1,-2]
-    a_list = [0, -2, 11, -4, 13, -5, 6, -2]
-    MaxSum(4, len(a_list)-1,a_list)
+    a_list = [0,2,-1,-2,3]
+    # a_list = [0, -2, 11, -4, 13, -5, 6, -2]
+    MaxSum(2, len(a_list)-1,a_list)
