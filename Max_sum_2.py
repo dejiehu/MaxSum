@@ -19,7 +19,10 @@ def MaxSum(m,n,a_list):
     for i in range(m, n + 1):
         if sum < b[m][i]:
             sum = b[m][i]
-    print(sum,b)
+    print("最大子段和为：",sum)
+    print("生成的b矩阵为:")
+    for i in range(1,len(b)):
+        print(b[i])
     return sum, b
 
 def search_index_addr(m,a_list,b,max):
@@ -52,5 +55,6 @@ def search_index_addr(m,a_list,b,max):
 
 if __name__ == '__main__':
     a_list = [0, -2, 11, -4, 13, -5, 6, -2]
-    max,b = MaxSum(6, len(a_list) - 1, a_list)
-    search_index_addr(6, a_list, b,max)
+    m = 7
+    max,b = MaxSum(m, len(a_list) - 1, a_list)
+    search_index_addr(m, a_list, b,max)
